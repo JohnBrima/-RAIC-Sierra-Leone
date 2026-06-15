@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submit Request | RAIC Open Data Platform</title>
+    <meta name="description" content="Submit an information request to the Right to Access Information Commission.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    <link rel="icon" type="image/png" href="assets/ChatGPT%20Image%20Jun%2013%2C%202026%2C%2010_24_34%20PM.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container-lg d-flex flex-wrap align-items-center justify-content-between gap-3"><div class="navbar-brand"><div class="brand-mark">RAIC</div><div class="site-title"><strong>Information Request</strong><span>Submit request</span></div></div><div class="d-flex align-items-center gap-2"><a href="login.html" class="btn btn-outline-secondary">Logout</a></div></div>
+    </header>
+    <main class="py-5">
+      <div class="container-lg">
+        <div class="page-title"><div><h1>Submit Information Request</h1><div class="page-breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-divider"></span><span>Submit Request</span></div></div></div>
+        <div class="form-card">
+          <form action="submit_request.php" method="post" enctype="multipart/form-data">
+            <div class="mb-3"><label class="form-label" for="requestTitle">Request Title</label><input id="requestTitle" name="title" type="text" class="form-control" placeholder="Title of request" required></div>
+            <div class="mb-3"><label class="form-label" for="requestDescription">Description</label><textarea id="requestDescription" name="description" class="form-control" rows="5" placeholder="Describe the information you are requesting" required></textarea></div>
+            <div class="row g-3 mb-3"><div class="col-md-6"><label class="form-label" for="requestMinistry">Ministry</label><select id="requestMinistry" name="ministry" class="form-select" required><option value="" selected>Select ministry</option><option>Ministry of Finance</option><option>Ministry of Health</option><option>Ministry of Education</option></select></div><div class="col-md-6"><label class="form-label" for="requestCategory">Category</label><select id="requestCategory" name="category" class="form-select" required><option value="" selected>Select category</option><option>Budget</option><option>Procurement</option><option>Project</option><option>Policy</option></select></div></div>
+            <div class="mb-3"><label class="form-label" for="requestAttachment">Attachment</label><input id="requestAttachment" name="attachment" type="file" class="form-control"></div>
+            <button class="btn btn-primary" type="submit">Submit request</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

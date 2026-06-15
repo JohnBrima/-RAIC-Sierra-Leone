@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAIC Sierra Leone | Open Data Platform</title>
+    <meta name="description" content="Open Data Platform for Governance Transparency - Sierra Leone Right to Access Information Commission.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="assets/ChatGPT%20Image%20Jun%2013%2C%202026%2C%2010_24_34%20PM.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container-lg d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div class="navbar-brand">
+          <div class="brand-mark" aria-hidden="true">RAIC</div>
+          <div class="site-title">
+            <strong>RAIC Sierra Leone</strong>
+            <span>Open Data Platform</span>
+          </div>
+        </div>
+        <form class="d-flex flex-fill mx-3" role="search" aria-label="Search datasets">
+          <input class="form-control me-2" type="search" placeholder="Search datasets, reports, budgets..." aria-label="Search">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-outline-secondary" aria-label="View notifications"><i class="bi bi-bell"></i></button>
+          <select class="form-select language-selector" aria-label="Select language" style="width: 140px;">
+            <option selected>EN</option>
+            <option>Krio</option>
+            <option>Temne</option>
+          </select>
+          <a href="login.html" class="btn btn-outline-primary">Login</a>
+          <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
+      <div class="container-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About RAIC</a></li>
+            <li class="nav-item"><a class="nav-link" href="datasets.html">Datasets</a></li>
+            <li class="nav-item"><a class="nav-link" href="reports.html">Reports</a></li>
+            <li class="nav-item"><a class="nav-link" href="budgets.html">Budgets</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="api.html">API Portal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-section">
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
+              <small class="badge bg-warning text-dark rounded-pill mb-3">Government Transparency</small>
+              <h1>Promoting Transparency Through Open Government Data</h1>
+              <p class="lead">Access government datasets, reports, budgets, procurement records and development information.</p>
+              <div class="d-flex flex-wrap gap-3 mb-4 hero-actions">
+                <a href="datasets.html" class="btn btn-light btn-lg">Browse Datasets</a>
+                <a href="api.html" class="btn btn-outline-light btn-lg">Explore API</a>
+                <a href="contact.html" class="btn btn-warning btn-lg text-dark">Request Information</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="search-panel p-4">
+                <h3 class="mb-3">Find public datasets by category</h3>
+                <form class="row g-3" aria-label="Browse categories">
+                  <div class="col-12">
+                    <input class="form-control" type="search" placeholder="Search datasets by title, ministry, or keyword">
+                  </div>
+                  <div class="col-md-4"><button class="btn btn-primary w-100" type="submit">Datasets</button></div>
+                  <div class="col-md-4"><button class="btn btn-outline-primary w-100" type="button">Reports</button></div>
+                  <div class="col-md-4"><button class="btn btn-outline-secondary w-100" type="button">Budgets</button></div>
+                </form>
+                <div class="mt-4 category-list">
+                  <button class="btn btn-sm btn-outline-light text-white">Finance</button>
+                  <button class="btn btn-sm btn-outline-light text-white">Health</button>
+                  <button class="btn btn-sm btn-outline-light text-white">Education</button>
+                  <button class="btn btn-sm btn-outline-light text-white">Procurement</button>
+                  <button class="btn btn-sm btn-outline-light text-white">Infrastructure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5">
+        <div class="container-lg">
+          <div class="section-heading text-center mb-5">
+            <h2>Platform Impact at a Glance</h2>
+            <p>Transparent, open and accountable public sector data for citizens, publishers, and decision makers.</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <small>Total Datasets</small>
+              <div class="stat-number" data-count="1284">0</div>
+            </div>
+            <div class="stat-card">
+              <small>Total Downloads</small>
+              <div class="stat-number" data-count="189273">0</div>
+            </div>
+            <div class="stat-card">
+              <small>Ministries Participating</small>
+              <div class="stat-number" data-count="24">0</div>
+            </div>
+            <div class="stat-card">
+              <small>Published Reports</small>
+              <div class="stat-number" data-count="432">0</div>
+            </div>
+            <div class="stat-card">
+              <small>Information Requests</small>
+              <div class="stat-number" data-count="6,148">0</div>
+            </div>
+            <div class="stat-card">
+              <small>Active Users</small>
+              <div class="stat-number" data-count="12,504">0</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5 bg-light">
+        <div class="container-lg">
+          <div class="section-heading d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+            <div>
+              <h2>Featured Datasets</h2>
+              <p class="mb-0">Explore high-value national datasets with open access and analytics-ready metadata.</p>
+            </div>
+            <a href="datasets.html" class="btn btn-outline-primary">View all datasets</a>
+          </div>
+          <div class="featured-grid mt-4">
+            <article class="featured-card">
+              <div class="card-body">
+                <span class="tag-label">Economy</span>
+                <h3 class="mt-3">National Budget Allocations</h3>
+                <p class="text-muted">Ministry of Finance</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small>Downloads: 12,458</small>
+                  <small>Updated 2 days ago</small>
+                </div>
+                <div class="mt-4 d-flex gap-2 flex-wrap">
+                  <a href="dataset-details.html" class="btn btn-primary btn-sm">View</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Download</a>
+                </div>
+              </div>
+            </article>
+            <article class="featured-card">
+              <div class="card-body">
+                <span class="tag-label">Health</span>
+                <h3 class="mt-3">Public Health Service Delivery</h3>
+                <p class="text-muted">Ministry of Health and Sanitation</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small>Downloads: 9,012</small>
+                  <small>Updated 5 days ago</small>
+                </div>
+                <div class="mt-4 d-flex gap-2 flex-wrap">
+                  <a href="dataset-details.html" class="btn btn-primary btn-sm">View</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Download</a>
+                </div>
+              </div>
+            </article>
+            <article class="featured-card">
+              <div class="card-body">
+                <span class="tag-label">Infrastructure</span>
+                <h3 class="mt-3">Development Project Tracker</h3>
+                <p class="text-muted">Ministry of Works</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small>Downloads: 7,834</small>
+                  <small>Updated 7 days ago</small>
+                </div>
+                <div class="mt-4 d-flex gap-2 flex-wrap">
+                  <a href="dataset-details.html" class="btn btn-primary btn-sm">View</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Download</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5">
+        <div class="container-lg">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                <h2>Open Budget Highlights</h2>
+                <p>Fiscal transparency across ministries, allocation and utilization performance.</p>
+              </div>
+              <div class="budget-card mb-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                      <h5>Ministry of Finance</h5>
+                      <small class="text-muted">FY 2025</small>
+                    </div>
+                    <span class="badge bg-success">Utilized 83%</span>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2"><small>Allocation</small><strong>Le 1.2T</strong></div>
+                  <div class="d-flex justify-content-between mb-3"><small>Utilization</small><strong>Le 1.0T</strong></div>
+                  <div class="progress mb-1"><div class="progress-bar bg-success" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+              </div>
+              <div class="budget-card mb-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                      <h5>Ministry of Health</h5>
+                      <small class="text-muted">FY 2025</small>
+                    </div>
+                    <span class="badge bg-warning text-dark">Utilized 72%</span>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2"><small>Allocation</small><strong>Le 620B</strong></div>
+                  <div class="d-flex justify-content-between mb-3"><small>Utilization</small><strong>Le 450B</strong></div>
+                  <div class="progress mb-1"><div class="progress-bar bg-warning" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="section-heading">
+                <h2>Recent Procurement</h2>
+                <p>Procurement transparency for contracts, vendors and status tracking.</p>
+              </div>
+              <div class="procurement-card mb-4">
+                <div class="card-body">
+                  <h5>Road Rehabilitation Works</h5>
+                  <p class="text-muted mb-1">Contractor: Sierra Construction Ltd.</p>
+                  <div class="d-flex justify-content-between mb-2"><small>Amount</small><strong>Le 320M</strong></div>
+                  <div class="d-flex justify-content-between align-items-center"><span class="badge bg-success">Awarded</span><small>View details</small></div>
+                </div>
+              </div>
+              <div class="procurement-card mb-4">
+                <div class="card-body">
+                  <h5>School Supplies Procurement</h5>
+                  <p class="text-muted mb-1">Contractor: Freetown Supply Chain</p>
+                  <div class="d-flex justify-content-between mb-2"><small>Amount</small><strong>Le 140M</strong></div>
+                  <div class="d-flex justify-content-between align-items-center"><span class="badge bg-warning text-dark">In Review</span><small>View details</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5 bg-light">
+        <div class="container-lg">
+          <div class="section-heading d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div>
+              <h2>Development Projects</h2>
+              <p class="mb-0">Track project budgets, status and district impact.</p>
+            </div>
+            <a href="projects.html" class="btn btn-primary">See all projects</a>
+          </div>
+          <div class="data-grid mt-4">
+            <article class="project-card">
+              <div class="card-body">
+                <h5>Community Water Supply</h5>
+                <p class="text-muted">District: Bo</p>
+                <div class="d-flex justify-content-between mb-2"><small>Budget</small><strong>Le 85M</strong></div>
+                <div class="d-flex justify-content-between mb-2"><small>Completion</small><strong>Aug 2026</strong></div>
+                <div class="progress"><div class="progress-bar bg-success" role="progressbar" style="width: 64%;" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div></div>
+                <small class="text-muted">Progress: 64%</small>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="card-body">
+                <h5>Health Outreach Centres</h5>
+                <p class="text-muted">District: Kenema</p>
+                <div class="d-flex justify-content-between mb-2"><small>Budget</small><strong>Le 112M</strong></div>
+                <div class="d-flex justify-content-between mb-2"><small>Completion</small><strong>Dec 2026</strong></div>
+                <div class="progress"><div class="progress-bar bg-warning" role="progressbar" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div></div>
+                <small class="text-muted">Progress: 48%</small>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="card-body">
+                <h5>School Renovation Initiative</h5>
+                <p class="text-muted">District: Port Loko</p>
+                <div class="d-flex justify-content-between mb-2"><small>Budget</small><strong>Le 95M</strong></div>
+                <div class="d-flex justify-content-between mb-2"><small>Completion</small><strong>Jun 2026</strong></div>
+                <div class="progress"><div class="progress-bar bg-success" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div>
+                <small class="text-muted">Progress: 82%</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5">
+        <div class="container-lg">
+          <div class="section-heading">
+            <h2>Open Data Analytics</h2>
+            <p>Interactive preview of budget, category and request trends.</p>
+          </div>
+          <div class="chart-grid mt-4">
+            <div class="chart-card">
+              <div class="card-body">
+                <h5>Budget Distribution</h5>
+                <canvas class="chart-placeholder" data-chart="doughnut" data-label="Budget Distribution" aria-label="Budget distribution chart" role="img"></canvas>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="card-body">
+                <h5>Dataset Categories</h5>
+                <canvas class="chart-placeholder" data-chart="pie" data-label="Dataset Categories" aria-label="Dataset categories chart" role="img"></canvas>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="card-body">
+                <h5>Downloads Trend</h5>
+                <canvas class="chart-placeholder" data-label="Downloads Trend" aria-label="Downloads trend chart" role="img"></canvas>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="card-body">
+                <h5>Information Requests</h5>
+                <canvas class="chart-placeholder" data-label="Information Requests" aria-label="Information requests chart" role="img"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5 bg-light">
+        <div class="container-lg">
+          <div class="section-heading d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div>
+              <h2>Latest Reports</h2>
+              <p class="mb-0">Download recent analyses and transparency reports from RAIC.</p>
+            </div>
+            <a href="reports.html" class="btn btn-outline-primary">Browse reports</a>
+          </div>
+          <div class="data-grid mt-4">
+            <article class="report-card">
+              <img src="https://via.placeholder.com/640x360?text=Report+Cover" class="card-img-top rounded-top" alt="Report cover image">
+              <div class="card-body">
+                <h5>Annual Open Data Progress</h5>
+                <p class="text-muted mb-2">Published March 2026</p>
+                <p class="mb-3">Data summary for transparency performance and citizen access rights.</p>
+                <a href="#" class="btn btn-primary btn-sm">Download</a>
+              </div>
+            </article>
+            <article class="report-card">
+              <img src="https://via.placeholder.com/640x360?text=Report+Cover" class="card-img-top rounded-top" alt="Report cover image">
+              <div class="card-body">
+                <h5>Budget Utilization Review</h5>
+                <p class="text-muted mb-2">Published February 2026</p>
+                <p class="mb-3">A high-level report of budget allocations and spending through Q1.</p>
+                <a href="#" class="btn btn-primary btn-sm">Download</a>
+              </div>
+            </article>
+            <article class="report-card">
+              <img src="https://via.placeholder.com/640x360?text=Report+Cover" class="card-img-top rounded-top" alt="Report cover image">
+              <div class="card-body">
+                <h5>Procurement Transparency Analysis</h5>
+                <p class="text-muted mb-2">Published January 2026</p>
+                <p class="mb-3">Open procurement records and contractor accountability dashboard review.</p>
+                <a href="#" class="btn btn-primary btn-sm">Download</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section py-5">
+        <div class="container-lg">
+          <div class="section-heading d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div>
+              <h2>News & Announcements</h2>
+              <p class="mb-0">Stay informed about open data initiatives and public notices.</p>
+            </div>
+            <a href="news.html" class="btn btn-outline-primary">More news</a>
+          </div>
+          <div class="data-grid mt-4">
+            <article class="news-card">
+              <img src="https://via.placeholder.com/640x360?text=News" class="card-img-top rounded-top" alt="News image">
+              <div class="card-body">
+                <h5>RAIC publishes new information access dashboard</h5>
+                <p class="text-muted mb-3">April 2026 · Public Participation</p>
+                <p>New section now allows citizens to track requests and monitor ministry reports.</p>
+                <a href="news.html" class="btn btn-link">Read more</a>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://via.placeholder.com/640x360?text=News" class="card-img-top rounded-top" alt="News image">
+              <div class="card-body">
+                <h5>Open budget summaries updated for FY 2025</h5>
+                <p class="text-muted mb-3">May 2026 · Transparency</p>
+                <p>New budget dashboards include ministry allocation and utilization indicators.</p>
+                <a href="news.html" class="btn btn-link">Read more</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5>About RAIC</h5>
+            <p>The Right to Access Information Commission champions access to government data, public participation and accountability through transparent publication and responsive services.</p>
+          </div>
+          <div class="col-md-2">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="datasets.html">Datasets</a></li>
+              <li><a href="api.html">API Portal</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <p class="mb-1">RAIC Office, Freetown, Sierra Leone</p>
+            <p class="mb-1">email@raic.gov.sl</p>
+            <p>+232 76 123 456</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Newsletter</h5>
+            <p>Subscribe for portal updates and dataset releases.</p>
+            <form class="d-flex gap-2">
+              <input type="email" class="form-control" placeholder="Your email" aria-label="Email address">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+            <div class="social-list mt-3">
+              <a href="#" aria-label="Twitter">T</a>
+              <a href="#" aria-label="Facebook">F</a>
+              <a href="#" aria-label="LinkedIn">L</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-muted mt-4">© 2026 Right to Access Information Commission • Sierra Leone</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

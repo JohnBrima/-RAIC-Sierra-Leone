@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publisher Dashboard | RAIC Open Data Platform</title>
+    <meta name="description" content="Publisher portal dashboard for managing datasets, metadata and analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    <link rel="icon" type="image/png" href="assets/ChatGPT%20Image%20Jun%2013%2C%202026%2C%2010_24_34%20PM.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container-lg d-flex flex-wrap align-items-center justify-content-between gap-3"><div class="navbar-brand"><div class="brand-mark">RAIC</div><div class="site-title"><strong>Publisher Portal</strong><span>Manage datasets</span></div></div><div class="d-flex align-items-center gap-2"><a href="index.html" class="btn btn-outline-secondary">Public site</a><a href="login.html" class="btn btn-primary">Logout</a></div></div>
+    </header>
+    <main class="dashboard-shell container-lg">
+      <div class="row g-4">
+        <aside class="col-xl-3 col-lg-4">
+          <div class="dashboard-sidebar dashboard-card p-4 mb-4"><h5>Publisher Menu</h5><ul class="nav flex-column"><li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li><li class="nav-item"><a class="nav-link" href="upload-dataset.html">Upload Dataset</a></li><li class="nav-item"><a class="nav-link" href="datasets.html">Manage Datasets</a></li><li class="nav-item"><a class="nav-link" href="#">Metadata</a></li><li class="nav-item"><a class="nav-link" href="#">Statistics</a></li><li class="nav-item"><a class="nav-link" href="#">Profile</a></li></ul></div>
+          <div class="dashboard-card p-4"><h5>Checklist</h5><ul class="list-unstyled mb-0"><li>Complete dataset metadata</li><li>Submit for review</li><li>Monitor publishing status</li></ul></div>
+        </aside>
+        <section class="col-xl-9 col-lg-8">
+          <div class="widget-grid mb-4"><div class="dashboard-card p-4"><h6>Datasets published</h6><strong>18</strong></div><div class="dashboard-card p-4"><h6>Items under review</h6><strong>4</strong></div><div class="dashboard-card p-4"><h6>Pending approvals</h6><strong>2</strong></div><div class="dashboard-card p-4"><h6>API requests</h6><strong>1,248</strong></div></div>
+          <div class="dashboard-card p-4 mb-4"><h5>Publisher insights</h5><canvas class="chart-placeholder" data-chart="line" data-label="Publisher uploads"></canvas></div>
+          <div class="dashboard-card p-4"><h5>Recent dataset activity</h5><div class="table-responsive"><table class="table"><thead><tr><th>Title</th><th>Status</th><th>Updated</th></tr></thead><tbody><tr><td>Education Enrollment</td><td><span class="badge bg-success">Published</span></td><td>2 days ago</td></tr><tr><td>Health Facility Census</td><td><span class="badge bg-warning text-dark">Review</span></td><td>1 day ago</td></tr><tr><td>Procurement Register</td><td><span class="badge bg-secondary">Draft</span></td><td>3 days ago</td></tr></tbody></table></div></div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+

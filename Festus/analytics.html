@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analytics | RAIC Open Data Platform</title>
+    <meta name="description" content="Responsive analytics page with dataset upload trends, downloads, active users and ministry metrics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    <link rel="icon" type="image/png" href="assets/ChatGPT%20Image%20Jun%2013%2C%202026%2C%2010_24_34%20PM.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container-lg d-flex flex-wrap align-items-center justify-content-between gap-3"><div class="navbar-brand"><div class="brand-mark">RAIC</div><div class="site-title"><strong>Analytics</strong><span>Open Data insights</span></div></div><div class="d-flex align-items-center gap-2"><a href="admin-dashboard.html" class="btn btn-outline-secondary">Admin</a><a href="login.html" class="btn btn-primary">Logout</a></div></div>
+    </header>
+    <main class="py-5">
+      <div class="container-lg">
+        <div class="page-title"><div><h1>Analytics Dashboard</h1><div class="page-breadcrumb"><a href="admin-dashboard.html">Admin Dashboard</a><span class="breadcrumb-divider"></span><span>Analytics</span></div></div></div>
+        <div class="widget-grid mb-4"><div class="dashboard-card p-4"><h6>Dataset upload trends</h6><strong>312 / month</strong></div><div class="dashboard-card p-4"><h6>Downloads per month</h6><strong>14,980</strong></div><div class="dashboard-card p-4"><h6>Active users</h6><strong>1,842</strong></div><div class="dashboard-card p-4"><h6>Requests</h6><strong>6,148</strong></div><div class="dashboard-card p-4"><h6>Top ministries</h6><strong>Ministry of Finance</strong></div></div>
+        <div class="chart-grid mb-4"><div class="chart-card"><div class="card-body"><h5>Dataset Upload Trends</h5><canvas class="chart-placeholder" data-chart="line" data-label="Upload trends"></canvas></div></div><div class="chart-card"><div class="card-body"><h5>Downloads Per Month</h5><canvas class="chart-placeholder" data-chart="bar" data-label="Downloads per month"></canvas></div></div><div class="chart-card"><div class="card-body"><h5>Active Users</h5><canvas class="chart-placeholder" data-chart="bar" data-label="Active users"></canvas></div></div><div class="chart-card"><div class="card-body"><h5>Information Requests</h5><canvas class="chart-placeholder" data-chart="line" data-label="Requests"></canvas></div></div><div class="chart-card"><div class="card-body"><h5>Dataset Categories</h5><canvas class="chart-placeholder" data-chart="doughnut" data-label="Categories"></canvas></div></div><div class="chart-card"><div class="card-body"><h5>Top Ministries</h5><canvas class="chart-placeholder" data-chart="pie" data-label="Ministries"></canvas></div></div></div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
